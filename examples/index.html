@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>genarts.js</title>
+		<link rel="stylesheet" type="text/css" href="styles/example.css"></link>
+		<script type="text/javascript" src="scripts/example.js"></script>
+		<script type="text/javascript" src="scripts/genarts.min.js"></script>
+	</head>
+	<body>
+		<canvas id="c"></canvas>
+		<button type="button" id="fsBtn" onclick="launchIntoFullscreen(document.documentElement)">Fullscreen</button>
+		<script type="text/javascript">
+			
+			var cvs = document.getElementById("c");
+			var ctx = cvs.getContext("2d");
+			var genarts = new GenArts(ctx);
+			console.log("Genart.js v"+genarts.VERSION);
+			onResize();
+
+			function main() {
+				genarts.basic(
+					window.innerWidth/2,  // x
+					window.innerHeight/2, // y
+					Math.random()*20-10,  // vx
+					Math.random()*16-8   // vy
+				);
+			}
+
+			window.addEventListener("resize", onResize, false);
+			function onResize() {
+				cvs.width = window.innerWidth;
+				cvs.height = window.innerHeight;
+				main();
+			}
+
+			window.addEventListener("keyup", onKeyUp, false);
+			function onKeyUp(e) {
+				switch(e.keyCode) {
+					case 32 :
+						genarts.togglePause();
+					break;
+				}
+			}
+
+		</script>
+	</body>
+</html>
