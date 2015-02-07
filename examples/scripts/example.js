@@ -19,16 +19,3 @@ function exitFullscreen() {
     document.webkitExitFullscreen();
   }
 }
-
-document.documentElement.addEventListener('fullscreenchange', handleFullscreen);
-document.documentElement.addEventListener('mozfullscreenchange', handleFullscreen);
-document.documentElement.addEventListener('webkitfullscreenchange', handleFullscreen);
-document.documentElement.addEventListener('MSFullscreenChange', handleFullscreen);
-
-function handleFullscreen() {
-	var fullscreenEnabled = document.fullscreenEnabled || document.mozFullScreenEnabled || document.webkitFullscreenEnabled;
-	if(fullscreenEnabled)
-		document.getElementById('fsBtn').style.display = 'none';
-	else
-		document.getElementById('fsBtn').style.display = 'block';
-}

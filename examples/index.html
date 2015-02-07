@@ -8,7 +8,7 @@
 	</head>
 	<body>
 		<canvas id="c"></canvas>
-		<button type="button" id="fsBtn" onclick="launchIntoFullscreen(document.documentElement)">Fullscreen</button>
+		<button type="button" id="fsBtn" onclick="launchIntoFullscreen(document.getElementById('c'))">Fullscreen</button>
 		<script type="text/javascript">
 			
 			var cvs = document.getElementById("c");
