@@ -27,6 +27,6 @@ genarts.basic(
 
 and then you can press Fullscreen and enjoy a modest screen-saver :)
 
-### Miscellaneous
-- Press *Spacebar* to pause / resume the engine
-- By default, after *330 seconds* the engine will halt. You can hit *Spacebar* twice to make it resume
+### Miscellaneous:
+- Press *Spacebar* to pause / unpause the engine.
+- By default, after *330 seconds* the engine will halt. You can hit *Spacebar* twice to make it resume.
