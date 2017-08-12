@@ -1,7 +1,7 @@
 # genarts
-Simple Generative Arts with JavaScript ([live example](http://storage.spaces.puresolutions.com.vn/demo/genarts/))
+Simple Generative Arts with JavaScript ([live example](https://kha.ngdinh.com/genarts/))
 
-![Genarts Demo Screenshot](http://storage.spaces.puresolutions.com.vn/demo/genarts/screenshot.png)
+![Genarts Demo Screenshot](https://kha.ngdinh.com/genarts/screenshot.png)
 
 ### To build the library:
 ```
